@@ -12,6 +12,60 @@ body {
     height: 100%;
 }
 
+/* Style Efek Dark-Mode Pada Portfolio */
+.minimMode {
+    background-color: rgb(226, 226, 213);
+    color: black;
+}
+
+/* Style Tombol Toggle Untuk Dark/Light Mode */
+#buttonToggleMode {
+    position: absolute;
+    top: 116px;
+    left: 80px;
+    width: 75px;
+    height: 22px;
+    border: 1px solid lightgray;
+    color: black;
+    font-size: 9px;
+    font-family: arial;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    border-top-left-radius: 15%;
+    border-top-right-radius:  15% 50%;
+    border-bottom-left-radius: 15% 40%;
+    border-bottom-right-radius: 15%;
+    opacity: 85%;
+    cursor: pointer;
+    animation-name: buttonAnimateBlink;
+    animation-duration: 6s;
+    animation-delay: .01s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    z-index: 1;
+}
+
+/* Style Transisi Tombol Pada Mode Dark/Light */
+#buttonToggleMode:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: black;
+    color: white;
+    opacity: 75%;
+    border: none;
+    filter: drop-shadow(2px 2px 3px
+    black);
+    transform: translateY(3px);
+    animation-name: buttonAnimateBW;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
 /* Style Animasi Pembukaan */
 #divWrapWelcome {
     margin-top: -5px;
@@ -125,8 +179,36 @@ header {
     border-radius: 7px;
     border-left: 3px solid black;
     border-right: 3px solid black;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    animation-name: marginAnimateHeader;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes marginAnimateHeader {
+    0% {
+        margin-left: 20%;
+        margin-right: 20%; 
+    }
+
+    30%, 50% {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    70%, 80% {
+        margin-left: 7%;
+        margin-right: 7%;
+    }   
+
+    100% {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 /* Style Bagian Main */
@@ -187,14 +269,20 @@ footer {
 
 /* Style Profil Pada Nav */
 #imgProfil {
+    margin: 0;
     position: absolute;
-    width: 70px;
-    height: 70px;
+    top: 110px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
     border-radius: 50%;
     background: none;
-    opacity: 88%;
+    opacity: 80%;
     cursor: default;
     cursor: pointer;
+    filter: drop-shadow(0 0 3px
+    black);
 }
 
 /* Style Tombol Di Nav */
@@ -327,7 +415,7 @@ footer {
     margin-bottom: 8px;
     margin-left: 23px;
     margin-right: 0;
-    border: 1px solid lightgray;
+    border: 1px solid black;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 15% 25%;
@@ -335,7 +423,7 @@ footer {
     width: 310px;
     height: 230px;
     float: left;
-    opacity: 40%;
+    opacity: 55%;
     animation-name: buttonAnimateBlink;
     animation-duration: 6s;
     animation-delay: .01s;
@@ -368,12 +456,12 @@ footer {
     margin-bottom: 8px;
     margin-left: 0;
     margin-right: 23px;
-    border: 1px solid lightgray;
+    border: 1px solid black;
     border-radius: 10px;
     width: 400px;
     height: 230px;
     float: right;
-    opacity: 40%;
+    opacity: 50%;
     animation-name: buttonAnimateBlink;
     animation-duration: 6s;
     animation-delay: .01s;
