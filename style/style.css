@@ -1,0 +1,557 @@
+/* AWAL STYLES UNTUK PORTFOLIO */
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style Body Sebagai Ketentuan Max (Width & Height) */
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style Animasi Pembukaan */
+#divWrapWelcome {
+    margin-top: -5px;
+    position: absolute;
+    width: 100%;
+    height: 1270px;
+    background: linear-gradient(80deg, lightcoral, lightsalmon, lightcoral);
+    color: black;
+    border-radius: 4px;
+    animation-name: welcomeAnimateDiv;
+    animation-duration: 5.5s;
+    animation-delay: .05s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    opacity: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+@keyframes welcomeAnimateDiv {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+#h1Welcome {
+    position: absolute;
+    top: 180px;
+    background: none;
+    color: black;
+    font-size: 5em;
+    font-size: 'times new roman';
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+    animation-name: textAnimateWelcome;
+    animation-duration: 1s;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+#pWelcome {
+    position: absolute;
+    top: 258px;
+    background: none;
+    color: black;
+    font-size: 1.4em;
+    font-family: 'times new roman';
+    font-weight: 500;
+    font-style: italic;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+    animation-name: textAnimateWelcome;
+    animation-duration: .7s;
+    animation-delay: 200ms;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+#h4Welcome {
+    position: absolute;
+    top: 285px;
+    font-size: 1.5em;
+    font-family: 'times new roman';
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+    animation-name: textAnimateWelcome;
+    animation-duration: .5s;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    filter: drop-shadow(0 0 3px
+    black);
+}
+
+@keyframes textAnimateWelcome {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Style Bagian Header */
+header {
+    margin-top: 5px;
+    background-color: lightslategray;
+    color: black;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+    filter: drop-shadow(0 0 8px
+    gray);
+    border-radius: 7px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Style Bagian Main */
+main {
+    /* Not Style Added */
+}
+
+/* Style Section Pertama Di Main */
+#section01 {
+    height: 570px;
+}
+
+/* Style Section Kedua Di Main */
+#section02 {
+    height: 300px;
+}
+
+#section03 {
+    height: 270px;
+}
+
+/* Style Bagian Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tHead {
+    position: absolute;
+    top: 8px;
+    background: none;
+    color: black;
+    font-size: 2.4em;
+    font-family: Georgia;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 89%;
+    cursor: default;
+    filter: drop-shadow(0 0 4px
+    black); 
+}
+
+#tHeadLow {
+    position: absolute;
+    top: 50px;
+    background: none;
+    color: black;
+    font-size: 1em;
+    font-family: arial;
+    font-weight: 500;
+    font-style: italic;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+}
+
+/* Style Profil Pada Nav */
+#imgProfil {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: none;
+    opacity: 88%;
+    cursor: default;
+    cursor: pointer;
+}
+
+/* Style Tombol Di Nav */
+#button0, #button1, #button2, #button3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 12px;
+    padding: 5px;
+    position: relative;
+    top: 6px;
+    right: 40px;
+    float: right;
+    font-size: .6em;
+    font-family: arial;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    border: 1px solid lightgray;
+    border-top-left-radius: 15%;
+    border-top-right-radius:  15% 50%;
+    border-bottom-left-radius: 15% 40%;
+    border-bottom-right-radius: 15%;
+    background-color: rgb(243, 243, 243);
+    color: black;
+    opacity: 75%;
+    cursor: pointer;
+    animation-name: buttonAnimateBlink;
+    animation-duration: 6s;
+    animation-delay: .01s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    transform: translateY(0);
+    z-index: 1;
+}
+
+@keyframes buttonAnimateBlink {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 75%;
+    }
+}
+
+#button0::before, #button1::before, #button2::before, #button3::before {
+    position: relative;
+    top: -1px;
+    content: " :: ";
+    font: 1em;
+    font-weight: 700;
+    background: none;
+    color: white;
+    opacity: 100%;
+    cursor: default;
+}
+
+/* Style Transisi Tombol Saat Disentuh Cursor */
+#button0:hover, #button1:hover, #button2:hover, #button3:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: black;
+    color: white;
+    opacity: 75%;
+    border: none;
+    filter: drop-shadow(2px 2px 3px
+    black);
+    transform: translateY(3px);
+    animation-name: buttonAnimateBW;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes buttonAnimateBW {
+    0% {
+        background-color: black;
+        color: white;
+    }
+
+    50% {
+        background-color: beige;
+        color: black;
+    }
+
+    100% {
+        background-color: black;
+        color: white;
+    }
+}
+
+#h2TextWL {
+    position: absolute;
+    top: 185px;
+    left: 35px;
+    background: none;
+    color: black;
+    font-size: 2em;
+    font-family: 'lucida sans';
+    font-weight: 600;
+    font-style: italic;
+    font-variant: normal;
+    opacity: 85%;
+    cursor: default;
+}
+
+#pTextWL {
+    position: absolute;
+    top: 220px;
+    left: 35px;
+    font-size: small;
+    font-family: 'gill sans';
+    font-weight: 400;
+    font-style: normal;
+    font-display: normal;
+    opacity: 75%;
+    cursor: default;
+}
+
+/* Style Display Form (comment) */
+#divWrapForm {
+    background-color: lightgray;
+    color: black;
+    position: relative;
+    top: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 23px;
+    margin-right: 0;
+    border: 1px solid lightgray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 15% 25%;
+    border-bottom-right-radius: 15% 25%;
+    width: 310px;
+    height: 230px;
+    float: left;
+    opacity: 40%;
+    animation-name: buttonAnimateBlink;
+    animation-duration: 6s;
+    animation-delay: .01s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style Transisi Saat Cursor Menyentuh Form */
+#divWrapForm:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    filter: drop-shadow(3px 2px 5px
+    black);
+    width: 350px;
+    opacity: 75%;
+}
+
+/* Style Display Result Dari Form (comment) */
+#divWrapResult {
+    background-color: lightgray;
+    color: black;
+    position: relative;
+    top: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 23px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+    float: right;
+    opacity: 40%;
+    animation-name: buttonAnimateBlink;
+    animation-duration: 6s;
+    animation-delay: .01s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    z-index: 1;
+}
+
+/* Style Transisi Saat Cursor Menyentuh Result */
+#divWrapResult:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    filter: drop-shadow(3px 2px 5px
+    black);
+    opacity: 75%;
+}
+
+/* Style Text Judul Pada Form */
+#textHead {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    background: none;
+    color: black;
+    font-size: 1em;
+    font-family: arial;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+/* Style Form Bagian Username */
+#username {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    background-color: white;
+    color: black;
+    width: 160px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 80%;
+    text-align: center;
+}
+
+#username:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: black;
+    width: 170px;
+    color: white;
+    opacity: 90%;
+}
+
+/* Style Form Bagian Date */
+#userDate {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    background-color: white;
+    color: black;
+    width: 160px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 80%;
+    text-align: center;
+}
+
+#userDate:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    background-color: black;
+    width: 170px;
+    color: white;
+    opacity: 90%;
+}
+
+/* Style Form Comment */
+#userMassage {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    background-color: white;
+    color: black;
+    width: 160px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 80%;
+    text-align: center;
+}
+
+#userMassage:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    width: 170px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    opacity: 90%;
+}
+
+/* Style Tombol Submit Pada Form */
+#buttonSubmitT {
+    position: absolute;
+    top: 205px;
+    left: 40px;
+    width: 80px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+#buttonSubmitT:hover {
+    transition: 200ms ease-in-out;
+    background-color: white;
+    color: black;
+    width: 70px;
+    opacity: 80%;
+    border: 1px solid black;
+}
+
+/* Style Radio1 Pada Form */
+#spanRadio1 {
+    position: absolute;
+    top: 88px;
+    left: 40px;
+    font-size: small;
+    font-family: georgia;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    word-spacing: 3.8px;
+}
+
+/* Style Radio2 Pada Form */
+#spanRadio2 {
+    position: absolute;
+    top: 103px;
+    left: 40px;
+    font-size: small;
+    font-family: georgia;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+}
+
+/* AKHIR STYLES UNTUK PORTFOLIO */
+
+/* Halo Kakak' RevoU, aku Putra,
+kak untuk css bagian seperti font, animation, background,
+itu saya selalu pisahin kak yang harusnya bisa di jadikan satu.
+alasannya kebiasaan aja kak sama suka aja kalau lihat kepisah' hehe */

@@ -1,0 +1,3 @@
+// AWAL CODE SCRIPT JS
+console.log('HELLO PUTRA!');
+// AKHIR CODE SCRIPT JS
