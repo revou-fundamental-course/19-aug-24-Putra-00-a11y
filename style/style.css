@@ -1071,24 +1071,20 @@ a:hover {
     cursor: default;
 }
 
+/* Style Img-Banner Pada Portfolio */
 .banner-img {
     position: absolute;
-    top: 280px;
+    top: 160px;
     right: 0;
+    background: none;
     margin-right: 30px;
-    width: 550px;
-    height: 350px;
+    width: 700px;
+    height: 500px;
     border-radius: 10px;
-    opacity: 80%;
-}
-
-#buttonBanner {
-    position: absolute;
-    top: 200px;
-    right: 30px;
-    padding: 20px;
-    z-index: 1;
-    cursor: pointer;
+    opacity: 65%;
+    filter: drop-shadow(0 0 4px
+    black);
+    cursor: default;
 }
 
 /* AKHIR STYLES UNTUK PORTFOLIO */
