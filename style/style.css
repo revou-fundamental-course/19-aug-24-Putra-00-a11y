@@ -224,6 +224,9 @@ main {
 /* Style Section Kedua Di Main */
 #section02 {
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #section03 {
@@ -1086,5 +1089,82 @@ a:hover {
     black);
     cursor: default;
 }
+
+#htmlImg {
+    margin: 0;
+    position: absolute;
+    left: 60px;
+    width: 170px;
+    height: 170px;
+    border: 1px solid black;
+    border-radius: 7px;
+    opacity: 70%;
+    cursor: default;
+}
+
+#htmlh3 {
+    margin: 0;
+    position: absolute;
+    top: 730px;
+    left: 27px;
+    font-size: .9em;
+    font-family: Verdana;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+}
+
+#cssImg {
+    margin: 0;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border: 1px solid black;
+    border-radius: 7px;
+    opacity: 70%;
+    cursor: default;
+} 
+
+#cssh3 {
+    position: absolute;
+    top: 730px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+}
+
+#jsImg {
+    margin: 0;
+    position: absolute;
+    right: 60px;
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 170px;
+    opacity: 70%;
+    cursor: default;
+}
+
+#jsh3 {
+    margin: 0;
+    position: absolute;
+    top: 730px;
+    right: 85px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 70%;
+    cursor: default;
+}
+
+/* Style Responsif Layar Pada HP */
 
 /* AKHIR STYLES UNTUK PORTFOLIO */
