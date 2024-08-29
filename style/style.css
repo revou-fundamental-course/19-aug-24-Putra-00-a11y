@@ -213,7 +213,7 @@ header {
 
 /* Style Bagian Main */
 main {
-    /* Not Style Added */
+    display: block;
 }
 
 /* Style Section Pertama Di Main */
@@ -273,6 +273,7 @@ footer {
     position: absolute;
     top: 110px;
     left: 15px;
+    background: none;
     width: 45px;
     height: 45px;
     border: 2px solid black;
@@ -401,6 +402,7 @@ footer {
     }
 }
 
+/* Style Tombol Content >Before< */
 #button0::before, #button1::before, #button2::before, #button3::before {
     position: relative;
     top: -1px;
@@ -450,6 +452,22 @@ footer {
     }
 }
 
+/* Style Anchor Di Navbar Tombol */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Style Transisi Anchor Pada Nabvar Text Tombol */
+a:hover {
+    transition: 200ms ease-in-out;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    color: lightcoral;
+    text-decoration: underline;
+}
+
 #h2TextWL {
     position: absolute;
     top: 185px;
@@ -469,6 +487,8 @@ footer {
     position: absolute;
     top: 220px;
     left: 35px;
+    background: none;
+    color: black;
     font-size: small;
     font-family: 'gill sans';
     font-weight: 400;
@@ -486,7 +506,7 @@ footer {
     top: 10px;
     margin-top: 8px;
     margin-bottom: 8px;
-    margin-left: 40px;
+    margin-left: 45px;
     margin-right: 0;
     border: 1px solid black;
     border-top-left-radius: 10px;
@@ -528,7 +548,7 @@ footer {
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 0;
-    margin-right: 40px;
+    margin-right: 45px;
     border: 1px solid black;
     border-top-left-radius: 15% 25%;
     border-bottom-left-radius: 15% 25%;
@@ -692,6 +712,7 @@ footer {
     position: absolute;
     top: 88px;
     left: 40px;
+    background: none;
     font-size: small;
     font-family: georgia;
     font-weight: 500;
@@ -706,6 +727,7 @@ footer {
     position: absolute;
     top: 103px;
     left: 40px;
+    background: none;
     font-size: small;
     font-family: georgia;
     font-weight: 500;
@@ -731,6 +753,7 @@ footer {
 /* Style Icon Pena Pada Form Bagian Input */
 .penIcons {
     position: relative;
+    background: none;
     width: 20px;
     height: 20px;
     opacity: 40%;
@@ -776,6 +799,9 @@ footer {
     animation-timing-function: linear;
     animation-direction: alternate;
     transform: translateX(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes profileAnimateM {
@@ -810,9 +836,154 @@ footer {
     black);
     text-decoration: overline underline wavy;
 }
-/* AKHIR STYLES UNTUK PORTFOLIO */
 
-/* Halo Kakak' RevoU, aku Putra,
-kak untuk css bagian seperti font, animation, background,
-itu saya selalu pisahin kak yang harusnya bisa di jadikan satu.
-alasannya kebiasaan aja kak sama suka aja kalau lihat kepisah' hehe */
+/* Style Text Header (about me) Di Portfolio */
+#profileHead {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 10px;
+    background: none;
+    color: black;
+    font-size: 2em;
+    font-family: 'times new roman';
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 80%;
+    cursor: default;
+}
+
+/* Style Double Div Sebagai Status Profil */
+#divWrapStatusProfile {
+    margin-top: 0;
+    position: relative;
+    top: -50px;
+    width: 77%;
+    height: 120px;
+    background-color: rgb(160, 160, 160);
+    color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+    opacity: 80%;
+    cursor: default;
+    filter: drop-shadow(0 0 4px
+    gray);
+    animation-name: divAnimateProfile1;
+    animation-duration: 7s;
+    animation-delay: .8s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes divAnimateProfile1 {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+/* Style Profile Name Di About-Me */
+#profileName0 {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+
+/* Style Profile Age Di About-Me */
+#profileAge0 {
+    position: absolute;
+    top: 21px;
+    left: 86px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+/* Style Profile Status Di About-Me */
+#profileStatus0 {
+    position: absolute;
+    top: 36px;
+    left: 78.5px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+/* Style Profile Hobby Di About-Me */
+#profileHobby0 {
+    position: absolute;
+    top: 53px;
+    left: 94px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+/* Style Profile FreeTime Di About-Me */
+#profileFreeTime0 {
+    position: absolute;
+    top: 70px;
+    left: 41px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+/* Style Profile Level-Coding Di About-Me */
+#profileLevel0 {
+    position: absolute;
+    top: 85px;
+    left: 27.5px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}
+
+/* Style Profile Type Di About-Me */
+#profileType0 {
+    position: absolute;
+    top: 100px;
+    left: 93px;
+    font-size: 1em;
+    font-family: Verdana;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 90%;
+    cursor: default;
+}

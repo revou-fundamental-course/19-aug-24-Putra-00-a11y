@@ -1,6 +1,10 @@
 // AWAL CODE SCRIPT JS
 console.log('HELLO PUTRA!');
 
+// Script Interpretasi Welcoming..
+const person = prompt("Masukkan Nama Kamu..");
+document.getElementById("h2TextWL").innerHTML = "Hello, " + person;
+
 // Script Mode Pergantin Lampu / Brightness
 const toggleButton = document.getElementById('buttonToggleMode');
 const themeStyle = document.getElementById('');
