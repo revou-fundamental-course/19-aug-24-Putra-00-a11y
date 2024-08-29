@@ -564,6 +564,9 @@ a:hover {
     animation-timing-function: linear;
     animation-direction: normal;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Style Transisi Saat Cursor Menyentuh Result */
@@ -987,3 +990,105 @@ a:hover {
     opacity: 90%;
     cursor: default;
 }
+
+/* Style Icons Pada Profile */
+#bahasa3Icons {
+    position: absolute;
+    top: 320px;
+    width: 200px;
+    height: 45px;
+}
+
+/* Style Div Untuk Text-Text */
+#divWrapTextProfile0 {
+    position: absolute;
+    top: 180px;
+    width: 460px;
+    background: none;
+    color: black;
+}
+
+/* Style Text Di DIv Text-Text */
+#textProfileText {
+    font-size: .9em;
+    font-family: 'segoe UI';
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    background: none;
+    color: black;
+    opacity: 90%;
+    cursor: default;
+}
+
+#h3ResultHead {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+}
+
+#resultName {
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+
+#resultDatePlace {
+    position: absolute;
+    top: 95px;
+    left: 30px;
+}
+
+#resultGender {
+    position: absolute;
+    top: 115px;
+    left: 30px;
+}
+
+#resultMassage {
+    position: absolute;
+    top: 135px;
+    left: 30px;
+}
+
+#resultDateLive {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+#h5Thanks {
+    position: absolute;
+    top: 190px;
+    background: none;
+    color: black;
+    font-size: 2em;
+    font-family: arial;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    opacity: 50%;
+    cursor: default;
+}
+
+.banner-img {
+    position: absolute;
+    top: 280px;
+    right: 0;
+    margin-right: 30px;
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+#buttonBanner {
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    padding: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* AKHIR STYLES UNTUK PORTFOLIO */

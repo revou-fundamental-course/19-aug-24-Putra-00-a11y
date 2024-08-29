@@ -41,16 +41,16 @@ function showBanner(indexBanner) {
   console.log(listImage);
 }
 
-function submitForm() {
+function buttonSubmit0() {
   // Mendapatkan nilai dari form
-  const name = document.getElementById('name').value;
-  const dob = document.getElementById('dob').value;
-  const gender = document.getElementById('gender').value;
-  const message = document.getElementById('message').value;
+  const name = document.getElementById("resultName").value;
+  const live = document.getElementById("resultDatePlace").value;
+  const gender = document.getElementById("resultGender").value;
+  const message = document.getElementById("resultMassage").value;
 
   // Memvalidasi input
-  if (name === "" || dob === "" || gender === "" || message === "") {
-      alert("Semua field harus diisi!");
+  if (name === "" || live === "" || gender === "" || message === "") {
+      alert("Masukkan Input!");
       return;
   }
 
@@ -59,17 +59,18 @@ function submitForm() {
   const formattedTime = currentTime.toLocaleString(); // Format waktu sesuai lokal
 
   // Menampilkan hasil input di halaman
-  const resultDiv = document.getElementById('result');
-  resultDiv.innerHTML = `
-      <h2>Hasil Input:</h2>
-      <p><strong>Nama:</strong> ${name}</p>
-      <p><strong>Tanggal Lahir:</strong> ${dob}</p>
-      <p><strong>Jenis Kelamin:</strong> ${gender}</p>
-      <p><strong>Pesan:</strong> ${message}</p>
-      <p><strong>Waktu Pengisian:</strong> ${formattedTime}</p>
+  const result = document.getElementById("divWrapResult");
+  result.innerHTML = `
+    <p>Time : ${currentTime} </p>
+    <h3>MY COMMENT :</h3>
+    <p id="resultName">Name : ${name.value} </p>
+    <p>Date/Place : ${live} </p>
+    <p>Gender : ${gender} </p>
+    <p>Massage : ${message} </p>
+    <h5>ThAnK YoU!</h5>
   `;
 
   // Mengosongkan form setelah submit
-  document.getElementById('userForm').reset();
+  document.getElementById("divWrapForm").reset();
 }
 // AKHIR CODE SCRIPT JS
