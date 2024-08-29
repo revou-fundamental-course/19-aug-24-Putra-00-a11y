@@ -278,11 +278,84 @@ footer {
     border: 2px solid black;
     border-radius: 50%;
     background: none;
-    opacity: 80%;
+    opacity: 70%;
     cursor: default;
-    cursor: pointer;
-    filter: drop-shadow(0 0 3px
+    animation-name: profileAnimateBorder;
+    animation-duration: 3s;
+    animation-delay: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: drop-shadow(0 0 4px
     black);
+}
+
+@keyframes profileAnimateBorder {
+    0% {
+        filter: drop-shadow(0 0 4px
+        black);
+        opacity: 75%;
+    }
+
+    10% {
+        filter: drop-shadow(0 0 4px
+        brown);
+        opacity: 70%;
+    }
+
+    20% {
+        filter: drop-shadow(0 0 4px
+        coral);
+        opacity: 75%;
+    }
+
+    30% {
+        filter: drop-shadow(0 0 4px
+        pink);
+        opacity: 70%;
+    }
+
+    40% {
+        filter: drop-shadow(0 0 4px
+        aqua);
+        opacity: 70%;
+    }
+
+    50% {
+        filter: drop-shadow(0 0 4px
+        darkgreen);
+        opacity: 75%;
+    }
+
+    60% {
+        filter: drop-shadow(0 0 4px
+        magenta);
+        opacity: 70%;
+    }
+
+    70% {
+        filter: drop-shadow(0 0 4px
+        darkblue);
+        opacity: 75%;
+    }
+
+    80% {
+        filter: drop-shadow(0 0 4px
+        lightgreen);
+        opacity: 70%;
+    }
+
+    90% {
+        filter: drop-shadow(0 0 4px
+        darkred);
+        opacity: 75%;
+    }
+
+    100% {
+        filter: drop-shadow(0 0 4px
+        black);
+        opacity: 70%;
+    }
 }
 
 /* Style Tombol Di Nav */
@@ -413,7 +486,7 @@ footer {
     top: 10px;
     margin-top: 8px;
     margin-bottom: 8px;
-    margin-left: 23px;
+    margin-left: 40px;
     margin-right: 0;
     border: 1px solid black;
     border-top-left-radius: 10px;
@@ -455,9 +528,12 @@ footer {
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 0;
-    margin-right: 23px;
+    margin-right: 40px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-top-left-radius: 15% 25%;
+    border-bottom-left-radius: 15% 25%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     width: 400px;
     height: 230px;
     float: right;
@@ -477,6 +553,7 @@ footer {
     transition-timing-function: linear;
     filter: drop-shadow(3px 2px 5px
     black);
+    width: 420px;
     opacity: 75%;
 }
 
@@ -597,7 +674,7 @@ footer {
     border: 1px solid black;
     border-radius: 4px;
     color: white;
-    opacity: 70%;
+    opacity: 75%;
     cursor: pointer;
 }
 
@@ -605,7 +682,7 @@ footer {
     transition: 200ms ease-in-out;
     background-color: white;
     color: black;
-    width: 70px;
+    width: 80px;
     opacity: 80%;
     border: 1px solid black;
 }
@@ -637,6 +714,102 @@ footer {
     opacity: 90%;
 }
 
+/* Style Icon Check Di Bagian Submit Form */
+#checkIcon0 {
+    position: relative;
+    top: 100px;
+    left: -75px;
+    background: none;
+    width: 16px;
+    height: 16px;
+    opacity: 50%;
+    cursor: default;
+    filter: drop-shadow(0 0 1px
+    black);
+}
+
+/* Style Icon Pena Pada Form Bagian Input */
+.penIcons {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    opacity: 40%;
+    cursor: default;
+}
+
+#penIcon0 {
+    top: -75px;
+    left: 77px;
+}
+
+#penIcon1 {
+    top: -40px;
+    left: 58px;
+}
+
+#penIcon2 {
+    top: 45px;
+    left: 39px;
+}
+
+/* Style Div Pada Bagian Section Pertama */
+#divWrapMyProfile {
+    position: relative;
+    top: 130px;
+    left: 38px;
+    width: 510px;
+    height: 335px;
+    border: 1px solid black;
+    border-top-left-radius: 5% 5%;
+    border-bottom-left-radius: 5% 5%;
+    border-top-right-radius: 15% 25%;
+    border-bottom-right-radius: 15% 25%;
+    background-color: lightgray;
+    color: black;
+    opacity: 80%;
+    cursor: default;
+    filter: drop-shadow(3px 2px 5px
+    black);
+    animation-name: profileAnimateM;
+    animation-duration: 5s;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transform: translateX(0);
+}
+
+@keyframes profileAnimateM {
+    from {
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 80%;
+    }
+}
+
+/* Style Letak Text (MASSAGE ME!) */
+#textMassageMeMiddle {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -520px;
+    left: 220px;
+    background: none;
+    color: lightgrey;
+    font-size: 6.5em;
+    font-family: Verdana;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: normal;
+    opacity: 15%;
+    cursor: default;
+    filter: drop-shadow(0 0 6px
+    black);
+    text-decoration: overline underline wavy;
+}
 /* AKHIR STYLES UNTUK PORTFOLIO */
 
 /* Halo Kakak' RevoU, aku Putra,
